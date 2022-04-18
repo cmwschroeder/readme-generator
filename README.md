@@ -1,3 +1,4 @@
+[![MIT license](https://img.shields.io/badge/License-MIT-blue.svg)](./LICENSE)
 # readme-generator
 
 ## Description
@@ -6,6 +7,7 @@
 
 * [Technologies](#technologies)
 * [Usage](#usage)
+* [License](#license)
 
 ## Technologies
 
@@ -15,3 +17,7 @@
 | Node.js | https://nodejs.org/en/ |
 
 ## Usage
+
+## License
+
+Licensed under the [MIT License](LICENSE)
