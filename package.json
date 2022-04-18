@@ -1,0 +1,22 @@
+{
+  "name": "readme-generator",
+  "version": "1.0.0",
+  "description": "takes in user input and generates a readme markdown file",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cmwschroeder/readme-generator.git"
+  },
+  "author": "Christian Schroeder",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/cmwschroeder/readme-generator/issues"
+  },
+  "homepage": "https://github.com/cmwschroeder/readme-generator#readme",
+  "dependencies": {
+    "inquirer": "^8.2.2"
+  }
+}
