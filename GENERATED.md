@@ -3,7 +3,7 @@
 
 ## Description
 
-This project will query the user and build a professional readme based of their response.
+This javascript program allows the user to create a professional readme based off of the user's input to various questions. Just runt the program using node.js and you will be asked several questions that are asked using the inquirer node module. After you have finished answering the questions a markdown file will be created with your new README.
 
 ## Table of Contents
 * [Installation](#installation)
@@ -23,7 +23,7 @@ Navigate to the directory containing the index.js. If you haven't installed yet 
 
 ## Contributing
 
-none
+Contact me
 
 ## Tests
 
