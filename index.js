@@ -6,13 +6,29 @@ const fs = require('fs');
 const questions = [
   {
     type: 'input',
+    name: 'githubName',
+    message: 'Enter your github username: ',
+  },
+  {
+    type: 'input',
+    name: 'email',
+    message: 'Enter the email to contact you about this project: ',
+  },
+  {
+    type: 'input',
     name: 'title',
     message: 'What is the title of your directory?'
   },
   {
     type: 'input',
     name: 'description',
-    message: 'Enter a description for your project: ',
+    message: 'Enter a short description for your project: ',
+  },
+  {
+    type: 'list',
+    name: 'license',
+    message: 'What kind of license should your project have?',
+    choices: ['MIT', 'APACHE 2.0', 'GPL', 'BSD 3', 'None'],
   },
   {
     type: 'confirm',
@@ -40,39 +56,33 @@ const questions = [
     name: 'testInstructions',
     message: 'Enter any test instructions for your project: ',
   },
-  {
-    type: 'input',
-    name: 'githubName',
-    message: 'Enter your github username: ',
-  },
-  {
-    type: 'input',
-    name: 'email',
-    message: 'Enter the email to contact you about this project: ',
-  },
-  {
-    type: 'list',
-    name: 'license',
-    message: 'What license did you use?',
-    choices: ['MIT', 'APACHE', 'GPL'],
-  }
 ];
 
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
+function writeToFile(fileName, data) {
+  const text = generateMarkdown(data);
+  fs.writeFile(fileName, text, (err) => {
+    if (err)
+      console.log(err);
+    else {
+      console.log("file written");
+    }
+  });
+}
 
 // TODO: Create a function to initialize app
 function init() {
     inquirer
     .prompt(questions).then((answers) => {
         //process and do something with the answers.
-        console.log(answers);
+        writeToFile("GENERATED.md", answers);
     })
     .catch((error) => {
         if (error.isTtyError) {
             // Prompt couldn't be rendered in the current environment
+            console.log("Error with inputs")
           } else {
-            //error
+            
           }
     })
 }
