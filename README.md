@@ -18,6 +18,8 @@
 
 ## Usage
 
+Navigate to the directory containing the index.js. If you haven't installed yet then run the installation instructions. Now just type in node index.js and you will be asked a series of questions. The file will be written in a GENERATED.md file in the same directory as the index.js file.
+
 ## License
 
 Licensed under the [MIT License](LICENSE)

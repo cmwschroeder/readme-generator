@@ -13,8 +13,25 @@ function renderLicenseLink(license) {
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
 function renderLicenseSection(license) {
-
+  switch(license) {
+    case 'MIT': 
+      return `## License  
+Licensed under the [MIT License](LICENSE)`;
+    case 'APACHE 2.0':
+      return `## License  
+Licensed under the [APACHE 2.0 License](LICENSE)`;
+    case 'GPL':
+      return `## License  
+Licensed under the [GPL License](LICENSE)`;
+    case 'BSD 3':
+      return `## License  
+Licensed under the [BSD 3 License](LICENSE)`;
+    default:
+      return '';
+  }
 }
+
+['MIT', 'APACHE 2.0', 'GPL', 'BSD 3', 'None']
 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
@@ -51,7 +68,10 @@ ${data.testInstructions}
 ## Questions
 If you have any questions you can reach me at:  
 Github: ${data.githubName}  
-Email: ${data.email}`;
+Github link: https://github.com/${data.githubName}  
+Email: ${data.email}
+  
+${renderLicenseSection(data.license)}`;
 }
 
 module.exports = generateMarkdown;
