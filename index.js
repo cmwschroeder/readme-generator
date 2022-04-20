@@ -81,8 +81,6 @@ function init() {
         if (error.isTtyError) {
             // Prompt couldn't be rendered in the current environment
             console.log("Error with inputs")
-          } else {
-            
           }
     })
 }
