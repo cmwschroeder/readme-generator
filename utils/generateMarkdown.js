@@ -1,5 +1,4 @@
-// TODO: Create a function that returns a license badge based on which license is passed in
-// If there is no license, return an empty string
+// Takes in the license and returns a badge based on which license is being used
 function renderLicenseBadge(license) {
   //use switch statement to handle license
   switch(license) {
@@ -16,8 +15,7 @@ function renderLicenseBadge(license) {
   }
 }
 
-// TODO: Create a function that returns the license link
-// If there is no license, return an empty string
+// Takes in a license and will return a link to the usage of the license
 function renderLicenseLink(license) {
   switch(license) {
     case 'MIT': 
@@ -33,8 +31,7 @@ function renderLicenseLink(license) {
   }
 }
 
-// TODO: Create a function that returns the license section of README
-// If there is no license, return an empty string
+// Takes in the license and creates a license section that will detail the license used
 function renderLicenseSection(license) {
   switch(license) {
     case 'MIT': 
@@ -54,9 +51,8 @@ Licensed under the [BSD 3 License](LICENSE)`;
   }
 }
 
-['MIT', 'APACHE 2.0', 'GPL', 'BSD 3', 'None']
-
-// TODO: Create a function to generate markdown for README
+// This function will take in the answers from the user and use it to populate a string literal template 
+// that will act as a professional readme
 function generateMarkdown(data) {
   return `${renderLicenseBadge(data.license)}
 # ${data.title}
