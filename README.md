@@ -30,6 +30,16 @@ npm install
 
 Navigate to the directory containing the index.js. If you haven't installed yet then run the installation instructions. Now just type in node index.js and you will be asked a series of questions. The file will be written in a GENERATED.md file in the same directory as the index.js file.
 
+Here is an example set of answers that could be given to the program:  
+
+![Queries with answers in console](./images/screenshot-one.png)
+
+This set of responses will give this readme:  
+
+![Photo of generated README](./images/generated-readme.png)
+
+Link to video showing installation and usage: https://www.youtube.com/watch?v=8RtukaIXNn0
+
 ## Questions
 If you have any questions you can reach me at:  
 Github: cmwschroeder  

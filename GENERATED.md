@@ -23,11 +23,11 @@ Navigate to the directory containing the index.js. If you haven't installed yet 
 
 ## Contributing
 
-Contact me
+contact us
 
 ## Tests
 
-none
+no test instructions
 
 ## Questions
 If you have any questions you can reach me at:  
