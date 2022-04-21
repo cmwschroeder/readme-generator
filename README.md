@@ -3,7 +3,7 @@
 
 ## Description
 
-This javascript program allows the user to create a professional readme based off of the user's input to various questions. Just runt the program using node.js and you will be asked several questions that are asked using the inquirer node module. After you have finished answering the questions a markdown file will be created with your new README.
+This javascript program allows the user to create a professional readme based off of the user's input to various questions. Just run the program using node.js and you will answer several questions that will help generate a readme. Just answer the questions and a markdown file will be generated with sections for a description, installation, usage, questions, and license. A license badge will be displayed at the top above the inputted title. You will also be asked to put in your github username and an email that you could be contacted at for questions about this repository. 
 
 ## Table of Contents
 
